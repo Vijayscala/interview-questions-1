@@ -9,8 +9,8 @@ Inspired by [DevOps Job Interview Questions](https://github.com/spikenode/DevOps
  1. [General Questions](#general-questions)
  2. [Networking Questions](#networking-questions)
  3. [Opperating System Questions](#opperating-system-questions)
-  3.1. [Linux](#linux-questions)
-  3.2. [Windows](#windows-questions)
+  a. [Linux](#linux-questions)
+  b. [Windows](#windows-questions)
 
 ## Getting Involved
 
