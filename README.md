@@ -9,6 +9,6 @@ Broad questions encourage discussion but should have followups to focus or coax 
 
 ### Domains of Questions
 
-[Human Questions](https://github.com/wh-iterabb-it/interview-questions/blob/master/roles/human/README.md)
-[DevOps Questions](https://github.com/wh-iterabb-it/interview-questions/blob/master/roles/devops/README.md)
-[Full Stack Questions](https://github.com/wh-iterabb-it/interview-questions/blob/master/roles/full/README.md)
+ * [Human Questions](https://github.com/wh-iterabb-it/interview-questions/blob/master/roles/human/README.md)
+ * [DevOps Questions](https://github.com/wh-iterabb-it/interview-questions/blob/master/roles/devops/README.md)
+ * [Full Stack Questions](https://github.com/wh-iterabb-it/interview-questions/blob/master/roles/full/README.md)
