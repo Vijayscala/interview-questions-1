@@ -2,8 +2,6 @@
 
 These are a collection of specific and general interview questions focusing on DevOp positions.
 
-Inspired by [DevOps Job Interview Questions](https://github.com/spikenode/DevOps-Interview-Questions) and [Front-end-Developers-Interview-Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
-
 ## Table of Contents
 
  * [General Questions](#general-questions)
