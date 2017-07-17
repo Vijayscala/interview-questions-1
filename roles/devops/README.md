@@ -11,8 +11,19 @@ Inspired by [DevOps Job Interview Questions](https://github.com/spikenode/DevOps
  * [Opperating System Questions](#opperating-system-questions)
  * 1. [Linux](#linux-questions)
  * 2. [Windows](#windows-questions)
+ * 3. [Cloud](#cloud-questions)
+ * 4. [AWS](#aws-questions)
+ * [Architecture Questions](#architecture-questions)
+ * 1. [Database](#database-questions)
+ * 2. [Deploy](#deploy-questions)
+ * 3. [CI](#ci-questions)
+ * 4. [Automation](#automation-questions)
+ * [Coding Questions](#coding-questions)
+ * [Fun Questions](#fun-questions)
 
 ## Getting Involved
+
+Make a PR, and contribute back if you enjoyed this list
 
 ### General Questions
 
@@ -110,9 +121,7 @@ Inspired by [DevOps Job Interview Questions](https://github.com/spikenode/DevOps
   * How can Docker help in this case?
 * How frequently have you been deploying?
   * Have you been able to improve the frequency of deployments? If so, how?
-
-**hard** 
-* Without using Docker, can you see the processes running inside a container from the outside?
+* **hard** Without using Docker, can you see the processes running inside a container from the outside?
 
 #### Automation Questions
 
@@ -140,3 +149,4 @@ Inspired by [DevOps Job Interview Questions](https://github.com/spikenode/DevOps
 
 * Do you have any side projects?
 * If you could learn any technology now, what would be?
+* How many windows are there in New York City?
