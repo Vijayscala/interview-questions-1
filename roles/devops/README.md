@@ -42,18 +42,18 @@ Make a PR, and contribute back if you enjoyed this list
 ### Networking Questions
 
 * Say I open a web browser and enter an address. I hit enter. Describe how the connection the works in as much detail as possible. Trying to hear that they understand:
- - Looking for (cache, DNS, network routing, Load Balancing, Ports on server, Service that is serving port)
- - browser checks cache; if requested object is in cache and is fresh, skip to #9
- - browser asks OS for server's IP address
- - OS makes a DNS lookup and replies the IP address to the browser
- - browser opens a TCP connection to server (this step is much more complex with HTTPS)
- - browser sends the HTTP request through TCP connection
- - browser receives HTTP response and may close the TCP connection, or reuse it for another request
- - browser checks if the response is a redirect or a conditional response (3xx result status codes), authorization request (401), error (4xx and 5xx), etc.; these are handled differently from normal responses (2xx)
- - if cacheable, response is stored in cache
- - browser decodes response (e.g. if it's gzipped)
- - browser determines what to do with response (e.g. is it a HTML page, is it an image, is it a sound clip?)
- - browser renders response, or offers a download dialog for unrecognized types
+  - Looking for (cache, DNS, network routing, Load Balancing, Ports on server, Service that is serving port)
+  - browser checks cache; if requested object is in cache and is fresh, skip to #9
+  - browser asks OS for server's IP address
+  - OS makes a DNS lookup and replies the IP address to the browser
+  - browser opens a TCP connection to server (this step is much more complex with HTTPS)
+  - browser sends the HTTP request through TCP connection
+  - browser receives HTTP response and may close the TCP connection, or reuse it for another request
+  - browser checks if the response is a redirect or a conditional response (3xx result status codes), authorization request (401), error (4xx and 5xx), etc.; these are handled differently from normal responses (2xx)
+  - if cacheable, response is stored in cache
+  - browser decodes response (e.g. if it's gzipped)
+  - browser determines what to do with response (e.g. is it a HTML page, is it an image, is it a sound clip?)
+  - browser renders response, or offers a download dialog for unrecognized types
 * What’s a PTR in DNS?
 * What’s a MX record in DNS?
 * How a CDN chooses the closest host to serve a client?
