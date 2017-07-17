@@ -1,4 +1,5 @@
-# interview-questions
+# Interview Questions
+
 A series of interview questions for various roles in tech
 
 Inspired by [DevOps Job Interview Questions](https://github.com/spikenode/DevOps-Interview-Questions) and [Front-end-Developers-Interview-Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
@@ -8,4 +9,6 @@ Broad questions encourage discussion but should have followups to focus or coax 
 
 ### Domains of Questions
 
+[Human Questions](https://github.com/wh-iterabb-it/interview-questions/blob/master/roles/human/README.md)
 [DevOps Questions](https://github.com/wh-iterabb-it/interview-questions/blob/master/roles/devops/README.md)
+[Full Stack Questions](https://github.com/wh-iterabb-it/interview-questions/blob/master/roles/full/README.md)
