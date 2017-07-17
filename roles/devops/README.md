@@ -1,9 +1,16 @@
 # DevOps Interview Questions
 
+These are a collection of specific and general interview questions focusing on DevOp positions.
 
 Inspired by [DevOps Job Interview Questions](https://github.com/spikenode/DevOps-Interview-Questions) and [Front-end-Developers-Interview-Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
 
 ## Table of Contents
+
+ 1. [General Questions](#general-questions)
+ 1. [Networking Questions](#networking-questions)
+ 1. [Opperating System Questions](#opperating-system-questions)
+ 2. [Linux](#linux-questions)
+ 2. [Windows](#windows-questions)
 
 ## Getting Involved
 
@@ -21,7 +28,7 @@ Inspired by [DevOps Job Interview Questions](https://github.com/spikenode/DevOps
 * Describe the most challenging situation that you were faced with and how did you fix it?
 * How do you stay current?
 
-### Network Questions
+### Networking Questions
 
 * Say I open a web browser and enter an address. I hit enter. Describe how the connection the works in as much detail as possible. Trying to hear that they understand:
   * DNS
@@ -52,27 +59,7 @@ Inspired by [DevOps Job Interview Questions](https://github.com/spikenode/DevOps
 * Are you familiar with just linux or have you worked with Windows environments as well?
   * If yes to windows do you use powershell? Octopus Deploy? TeamCity? Active Directory? Azure?
 
-#### Security Questions
-
-* Difference between authorization and authentication?
-* Describe two-factor authentication
-* Describe how would you secure a web application
-  * HTTP vs HTTPS
-* Talk about PKI/your experience with SSL/Certificates
-
 #### Cloud Questions
-
-* Have you used AWS or other cloud platforms?
-  * How long for?
-  * In production or just at home on personal projects?
-* How to keep logs on servers or containers with ephemeral storage?
-* Where to look when trying to reduce cloud costs without reducing capacity?
-* Name the "Big Three" cloud providers
-  * AWS
-  * GCE
-  * Azure
-
-##### AWS Questions
 
 * Describe the advantages/disadvantages of using CloudFormation to manage your resources
 * Would you use CloudFormation to create a RDS database?
@@ -84,6 +71,18 @@ Inspired by [DevOps Job Interview Questions](https://github.com/spikenode/DevOps
   * NATing
   * NACL's
   * VPN/VPC Peering
+  
+#### AWS Questions
+
+  * Have you used AWS or other cloud platforms?
+  * How long for?
+  * In production or just at home on personal projects?
+* How to keep logs on servers or containers with ephemeral storage?
+* Where to look when trying to reduce cloud costs without reducing capacity?
+* Name the "Big Three" cloud providers
+  * AWS
+  * GCE
+  * Azure
 
 ### Architecture Questions
 
@@ -128,6 +127,14 @@ Inspired by [DevOps Job Interview Questions](https://github.com/spikenode/DevOps
   * Feature branching vs trunk based development
   * Advantages of requiring pull requests and approvals
 * More on [Front-end Developer Job Interview Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/README.md)
+
+### Security Questions
+
+* Difference between authorization and authentication?
+* Describe two-factor authentication
+* Describe how would you secure a web application
+  * HTTP vs HTTPS
+* Talk about PKI/your experience with SSL/Certificates
 
 ### Fun Questions
 
