@@ -54,9 +54,9 @@ Make a PR, and contribute back if you enjoyed this list
   - browser decodes response (e.g. if it's gzipped)
   - browser determines what to do with response (e.g. is it a HTML page, is it an image, is it a sound clip?)
   - browser renders response, or offers a download dialog for unrecognized types
-* What’s a PTR in DNS?
-* What’s a MX record in DNS?
-* How a CDN chooses the closest host to serve a client?
+* What’s a [PTR in DNS](https://www.cloudns.net/wiki/article/40/)?
+* What’s a [MX record in DNS](https://www.cloudns.net/wiki/article/12/)?
+* How a CDN chooses the closest host to serve a client? https://superuser.com/questions/420949/how-do-cdn-content-distribution-networks-work
 * In which cases would you choose to not implement a CDN?
 * How do you measure the performance of a server/web application? (tools, methods)
 * What are secure ways to SSH to a server inside a private network from a public location?
