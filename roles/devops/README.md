@@ -103,13 +103,6 @@ Inspired by [DevOps Job Interview Questions](https://github.com/spikenode/DevOps
 * How have you handled failed deployments?
 * If something breaks in production, how do you know about it?
 
-#### Automation Questions
-
-* Have you used Puppet, Chef, Salt or Ansible?
-  * How long have you used it for?
-  * Have you used it in production?
-* Describe the size of the environment that you automated (how many servers, small scale or large scale)
-
 #### CI Questions
 
 * Are you familiar with CI tools? Which ones?
@@ -118,6 +111,16 @@ Inspired by [DevOps Job Interview Questions](https://github.com/spikenode/DevOps
   * How can Docker help in this case?
 * How frequently have you been deploying?
   * Have you been able to improve the frequency of deployments? If so, how?
+
+**hard** 
+* Without using Docker, can you see the processes running inside a container from the outside?
+
+#### Automation Questions
+
+* Have you used Puppet, Chef, Salt or Ansible?
+  * How long have you used it for?
+  * Have you used it in production?
+* Describe the size of the environment that you automated (how many servers, small scale or large scale)
 
 ### Coding Questions
 
