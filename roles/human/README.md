@@ -6,6 +6,12 @@ These are a collection of general interview questions focusing on building dialo
 
 #### General Questions:
 * What did you learn yesterday/this week?
+* Describe your experience with task management
+  * Agile
+  * Kanban
+  * Waterfall
+* Describe the most challenging situation that you were faced with and how did you fix it?
+* How do you stay current?
 * What excites or interests you about coding?
 * What is a recent technical challenge you experienced and how did you solve it?
 * What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
