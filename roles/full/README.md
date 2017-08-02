@@ -4,7 +4,6 @@ These are a collection of specific and general interview questions focusing on F
 
 ## Table of Contents
 
-  1. [General Questions](#general)
   1. [Architecture](#architecture)
   1. [WEB](#web)
   1. [SQL](#sql)
@@ -37,11 +36,6 @@ These are a collection of specific and general interview questions focusing on F
   1. [Image processing](#image-processing)
   1. [Cryptography](#cryptography)
   1. [Android](#android)
-
-####  <a name='general'>General Questions: 
-
-
-[[⬆]](#table-of-contents)
 
 #### [[⬆]](#table-of-contents) Architecture: 
 * *Design principles*. (SOLID, DRY, KISS, YAGNI, Worse is better, convention over configuration, separation of concerns, principle of least knowledge, tourist principle, single source of truth, single version of the truth)
