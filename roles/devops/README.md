@@ -29,13 +29,7 @@ Make a PR, and contribute back if you enjoyed this list
   * "Hard"/hands-on/SRE vs
   * "Soft"/Three Ways/Theory of Constraints/philosophy of DevOps
 * What do you find most challenging in the DevOps role?
-* Describe your experience with task management
-  * Agile
-  * Kanban
-  * Waterfall
 * What drew you to DevOps
-* Describe the most challenging situation that you were faced with and how did you fix it?
-* How do you stay current?
 
 ### Networking Questions
 
