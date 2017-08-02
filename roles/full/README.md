@@ -2,7 +2,7 @@
 
 These are a collection of specific and general interview questions focusing on Full Stack positions.
 
-## <a name='toc'>Table of Contents</a>
+## Table of Contents
 
   1. [General Questions](#general)
   1. [Architecture](#architecture)
@@ -38,18 +38,12 @@ These are a collection of specific and general interview questions focusing on F
   1. [Cryptography](#cryptography)
   1. [Android](#android)
 
-#### [[⬆]](#toc) <a name='general'>General Questions:</a>
-* What is *polymorphism*? (Variable of type Shape could refer to an object of type Square, Circle... Ability of a function to handle objects of many types)
-* What is *encapsulation* (Packing of data and functions into a single component)
-* What is *inversion of control*? (A design in which custom-written portions of a computer program receive the flow of control from a generic, reusable library)
-* What is tail recursion? (A tail call is a subroutine call performed as the final action of a procedure)
-* What is *virtual function*?
-* What is *virtual method table*?
-* What is *dynamic binding*?(Actual method implementation invoked is determined at run time based on the class of the object, not the type of the variable or expression)
-* How does *garbage collector* work? (Mark and sweep: mark: traverse object graph starting from root objects, sweep: garbage collect unmarked objects. Optimizations: young/old generations, incremental mark and sweep)
-* What is *semantic versioning*? (http://semver.org)
+####  <a name='general'>General Questions: 
 
-#### [[⬆]](#toc) <a name='architecture'>Architecture:</a>
+
+[[⬆]](#table-of-contents)
+
+#### [[⬆]](#table-of-contents) Architecture: 
 * *Design principles*. (SOLID, DRY, KISS, YAGNI, Worse is better, convention over configuration, separation of concerns, principle of least knowledge, tourist principle, single source of truth, single version of the truth)
 * Drawbacks of not using *separation of concerns*
   * Adding new features will take an order of magnitude longer
@@ -85,7 +79,7 @@ These are a collection of specific and general interview questions focusing on F
 * Advantages of using *modules*. (reuse, decoupling, namespace)
 * *Domain driver design*.
 
-#### [[⬆]](#toc) <a name='web'>WEB:</a>
+#### [[⬆]](#table-of-contents) WEB: 
 * WEB security vulnerabilities (XSS, CSRF, session fixation, SQL injection, man-in-the-middle, buffer overflow)
 * CSRF prevention. (CSRF-token)
 * What is *JSONP*, *CORS*? (A communication technique used in JavaScript programs running in web browsers to request data from a server in a different domain, something prohibited by typical web browsers because of the same-origin policy)
@@ -99,7 +93,7 @@ These are a collection of specific and general interview questions focusing on F
 * Authentication using cookies, JWT (JSON Web Tokens).
 * How *OAuth 2.0* works?
 
-#### [[⬆]](#toc) <a name='sql'>SQL:</a>
+#### [[⬆]](#table-of-contents) SQL: 
 * *SQL join types* (inner join, left/right outer join, full outer join, cross join
 ![Join types](https://habrastorage.org/files/7ff/b2c/3a2/7ffb2c3a25b74dcf9eec013282b9cfb4.png "Join types"))
 * *SQL normal forms* (1.The domain of each attribute contains only atomic values, and the value of each attribute contains only a single value from that domain. 2.No non-prime attribute in the table is functionally dependent on a proper subset of any candidate key. 3.Every non-prime attribute is non-transitively dependent on every candidate key in the table. BCNF.Every non-trivial functional dependency in the table is a dependency on a superkey.)
@@ -114,19 +108,19 @@ These are a collection of specific and general interview questions focusing on F
 |Snapshot        |-        |-        |-        |-        |may occur|
 |Serializable    |-        |-        |-        |-        |-        |
 
-#### [[⬆]](#toc) <a name='nosql'>NoSQL:</a>
+#### [[⬆]](#table-of-contents) NoSQL: 
 * Types of NoSQL databases?
   * Document Stores (MongoDB, Couchbase)
   * Key-Value Stores (Redis, Volgemort)
   * Column Stores (Cassandra)
   * Graph Stores (Neo4j, Giraph)
 
-#### [[⬆]](#toc) <a name='transactions'>Transactions:</a>
+#### [[⬆]](#table-of-contents) Transactions: 
 * What ACID?
 * What is 2-phase, 3-phase commit?
 * What is pessimistic/optimistic locking?
 
-#### [[⬆]](#toc) <a name='scalability'>Scalability:</a>
+#### [[⬆]](#table-of-contents) Scalability: 
 * Horizontal and vertical scaling.
 * How to scale database? (Data partitioning, sharding(vertical/horizontal), replication(master-slave, master-master)).
 * *Denormalization*.
@@ -136,15 +130,15 @@ These are a collection of specific and general interview questions focusing on F
 * MongoDB, Redis.
 * Hadoop basics.
 
-#### [[⬆]](#toc) <a name='load-balancing'>Load balancing:</a>
+#### [[⬆]](#table-of-contents) Load balancing: 
 * sticky/non-sticky sessions
 * *Sticky sessions* vs storing sessions in Redis.
 
-#### [[⬆]](#toc) <a name='cloud-computing'>Cloud computing:</a>
+#### [[⬆]](#table-of-contents) Cloud computing: 
 * What is *cloud computing*? (Cloud computing platform is a fully automated server platform that allows users to purchase, remotely create, dynamically scale, and administer system)
 * *Amazon web services*
 
-#### [[⬆]](#toc) <a name='distributed'>Distributed:</a>
+#### [[⬆]](#table-of-contents) Distributed: 
 * What is *CAP theorem*? (it is impossible for a distributed computer system to simultaneously provide all three of the following guarantees: *consistency*, *availability*, *partition tolerance*) ![CAP theorem](http://guide.couchdb.org/draft/consistency/01.png "CAP theorem")
 * What is *map-reduce*? (Word count example)
 * *Sharding counters*.
@@ -163,11 +157,11 @@ These are a collection of specific and general interview questions focusing on F
 ```
 * *Consensus number*. Maximum number of threads for which objects of the class can solve consensus problem.
 
-#### [[⬆]](#toc) <a name='cache'>Cache:</a>
+#### [[⬆]](#table-of-contents) Cache: 
 * What is *write-through* and *write-behind* caching? (write-through (synchronous), write-behind (asynchronous))
 * HTTP cache options?
 
-#### [[⬆]](#toc) <a name='concurrency'>Concurrency:</a>
+#### [[⬆]](#table-of-contents) Concurrency: 
 * What is *deadlock*, *livelock*? (Deadlock is a situation in which two or more competing actions are each waiting for the other to finish, and thus neither ever does. A livelock is similar to a deadlock, except that the states of the processes involved in the livelock constantly change with regard to one another, none progressing.)
 * Deadlock avoidance. (prevention, detection, avoidance (Mutex hierarchy), and recovery)
 * What is *starvation*? ()
@@ -200,20 +194,20 @@ These are a collection of specific and general interview questions focusing on F
 * *Produces/consumer* problem.
 * *Readers/writers* problem.
 
-#### [[⬆]](#toc) <a name='networking'>Networking:</a>
+#### [[⬆]](#table-of-contents) Networking: 
 * OSI model (Physical, Data link, Network, Transport, Session, Presentation, Application)
 * Multithreading vs select
 * Switch, hub, router.
 * TCP congestion.
 * TCP back-pressure.
 
-#### [[⬆]](#toc) <a name='os'>Operating system:</a>
+#### [[⬆]](#table-of-contents) Operating system: 
 * What is *memory mapped* file and its benefits?
 * *Interprocess communication* methods. (Pipes, Events, Mailboxes/Ports (can be implemented by using shared memory and semaphores), Direct Message Passing).
 * *Virtual memory* organization.
 * *Process scheduler*.
 
-#### [[⬆]](#toc) <a name='java'>Java:</a>
+#### [[⬆]](#table-of-contents) Java: 
 * *WeakReference*, *SoftReference*, *PhantomReference*, *finalize()*, *ReferenceQueue*. [link](https://community.oracle.com/blogs/enicholas/2006/05/04/understanding-weak-references)
 * How to correctly stop a thread? (Thread.interrupt())
 * What is *Spring*? (Spring Framework is an application container for Java that supplies many useful features, such as Inversion of Control, Dependency Injection, abstract data access, transaction management, and more)
@@ -235,7 +229,7 @@ These are a collection of specific and general interview questions focusing on F
 * Why are arrays covariant but generics are invariant? [link](http://stackoverflow.com/questions/18666710/why-are-arrays-covariant-but-generics-are-invariant)
 * Major specs: JAX-RS, JAX-WS, JMS, JAXB, XSLT, XPATH, JNDI, JMX, JDBC, XML(SAX, DOM, StAX)
 
-#### [[⬆]](#toc) <a name='javascript'>Javascript:</a>
+#### [[⬆]](#table-of-contents) Javascript: 
 * this keyword
 * How *prototypes* work?
 * inheritance 
@@ -247,7 +241,7 @@ These are a collection of specific and general interview questions focusing on F
 * What is *AMD*(Asynchronous Module Design) and *CommonJS*?
 * What is *jQuery*?
 
-#### [[⬆]](#toc) <a name='codewriting'>Codewriting:</a>
+#### [[⬆]](#table-of-contents) Codewriting: 
 * Implement binary search
 ```java
 int binarySearch(int[] a, int fromInclusive, int toExclusive, int key) {
@@ -303,22 +297,22 @@ for p in generate_permutations([0] * 3, 1):
     print(p)
 ```
 
-#### [[⬆]](#toc) <a name='functional-programming'>Functional programming:</a>
+#### [[⬆]](#table-of-contents) Functional programming: 
 * What is *Monad*?
 
-#### [[⬆]](#toc) <a name='reactive-programming'>Reactive programming:</a>
+#### [[⬆]](#table-of-contents) Reactive programming: 
 * *The Reactive Manifesto* (responsive, resilient, elastic, message driven http://www.reactivemanifesto.org)
 * What is *asynchronous* and *non-blocking*? [link](https://www.linkedin.com/pulse/java-servlets-asynchronous-non-blocking-aliaksandr-liakh)
 
-#### [[⬆]](#toc) <a name='git'>Git:</a>
+#### [[⬆]](#table-of-contents) Git: 
 * *Git* workflow? (Master: production-ready state; Develop: latest delivered development changes for the next release; Feature Branches; Release Branches; Hotfixes) ![Git workflow](http://nvie.com/img/git-model@2x.png "Git workflow") http://nvie.com/posts/a-successful-git-branching-model/
 * What is a rebase?
 
-#### [[⬆]](#toc) <a name='devOps'>DevOps:</a>
+#### [[⬆]](#table-of-contents) DevOps: 
 * What is *Blue-green Deployment*, *Canary release*, *A/B testing*? [link](https://www.javacodegeeks.com/2016/02/blue-green-deployment.html)
 * What is *Docker*?
 
-#### [[⬆]](#toc) <a name='qa'>QA:</a>
+#### [[⬆]](#table-of-contents) QA: 
 * What is *unit test*? (A test that purely tests a single unit of functionality)
 * What is *component test*?
 * What is *integration test*? (Examine several parts of a system to make sure that when integrated, these parts behave as expected)
@@ -330,7 +324,7 @@ for p in generate_permutations([0] * 3, 1):
 * How to test multithreading code?
 * What is *Consumer Driven Contract*? [link](https://cloud.spring.io/spring-cloud-contract/spring-cloud-contract.html)
 
-#### [[⬆]](#toc) <a name='agile'>Agile:</a>
+#### [[⬆]](#table-of-contents) Agile: 
 * What is Agile? (http://agilemanifesto.org/principles.html)
   * Individuals and interactions over Processes and tools
   * Working software over Comprehensive documentation
@@ -342,11 +336,11 @@ for p in generate_permutations([0] * 3, 1):
 * What is Kanban?
 * What is Lean, Kanban?
 
-#### [[⬆]](#toc) <a name='algorithms'>Algorithms:</a>
+#### [[⬆]](#table-of-contents) Algorithms: 
 * What Ο(n), Ω(n), Θ(n)?
 * What is NP, NP-completeness, NP-hardness with examples?
 
-#### [[⬆]](#toc) <a name='other'>Other:</a>
+#### [[⬆]](#table-of-contents) Other: 
 * How to find memory leak. (Memory snapshot diff).
 * Profiling: sampling and instrumentation.
 * Regular expressions. (Examples)
@@ -355,16 +349,16 @@ for p in generate_permutations([0] * 3, 1):
 * What is total/partial order?
 * How to work with legacy code? (http://programmers.stackexchange.com/a/122024)
 
-#### [[⬆]](#toc) <a name='machine-learning'>Machine learning:</a>
+#### [[⬆]](#table-of-contents) Machine learning: 
 * Bayes' theorem. P(A|B) = P(B|A)P(A)/P(B), P(B) = sum(P(Ai)P(B|Ai))
 
-#### [[⬆]](#toc) <a name='bid-data'>Big Data:</a>
+#### [[⬆]](#table-of-contents) Big Data: 
 * What is *Lambda architecture*?
 * What is *HyperLogLog*? (https://en.wikipedia.org/wiki/HyperLogLog)
 
-#### [[⬆]](#toc) <a name='image-processing'>Image processing:</a>
+#### [[⬆]](#table-of-contents) Image processing: 
 
-#### [[⬆]](#toc) <a name='cryptography'>Cryptography:</a>
+#### [[⬆]](#table-of-contents) Cryptography: 
 * What is *public key cryptography*?
 * What is *public key certificate*?
 * *RSA*
@@ -379,4 +373,4 @@ d=e^-1 mod phi(n)
 c = m^e mod n
 m = c^d mod n = m^(e*d) mod n = m^(e*d mod phi(n)) mod n = m
 ```
-#### [[⬆]](#toc) <a name='android'>Android:</a>
+#### [[⬆]](#table-of-contents) <a name='android'>Android: 
