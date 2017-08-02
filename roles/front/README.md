@@ -24,13 +24,7 @@ This file contains a number of front-end interview questions that can be used wh
 
 #### General Questions:
 
-* What did you learn yesterday/this week?
 * What excites or interests you about coding?
-* What is a recent technical challenge you experienced and how did you solve it?
-* What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
-* Talk about your preferred development environment.
-* Which version control systems are you familiar with?
-* Can you describe your workflow when you create a web page?
 * If you have 5 different stylesheets, how would you best integrate them into the site?
 * Can you describe the difference between progressive enhancement and graceful degradation?
 * How would you optimize a website's assets/resources?
@@ -39,7 +33,6 @@ This file contains a number of front-end interview questions that can be used wh
 * Name 3 ways to decrease page load (perceived or actual load time).
 * If you jumped on a project and they used tabs and you used spaces, what would you do?
 * Describe how you would create a simple slideshow page.
-* If you could master one technology this year, what would it be?
 * Explain the importance of standards and standards bodies.
 * What is Flash of Unstyled Content? How do you avoid FOUC?
 * Explain what ARIA and screenreaders are, and how to make a website accessible.
@@ -236,18 +229,4 @@ setTimeout(function() {
 console.log('three');
 ```
 
-#### Fun Questions:
 
-* What's a cool project that you've recently worked on?
-* What are some things you like about the developer tools you use?
-* Who inspires you in the front-end community?
-* Do you have any pet projects? What kind?
-* What's your favorite feature of Internet Explorer?
-* How do you like your coffee?
-
-
-#### Contributors:
-
-This document started in 2009 as a collaboration of [@paul_irish](https://twitter.com/paul_irish) [@bentruyman](https://twitter.com/bentruyman) [@cowboy](https://twitter.com/cowboy) [@ajpiano](https://twitter.com/ajpiano)  [@SlexAxton](https://twitter.com/slexaxton) [@boazsender](https://twitter.com/boazsender) [@miketaylr](https://twitter.com/miketaylr) [@vladikoff](https://twitter.com/vladikoff) [@gf3](https://twitter.com/gf3) [@jon_neal](https://twitter.com/jon_neal) [@sambreed](https://twitter.com/sambreed) and [@iansym](https://twitter.com/iansym).
-
-It has since received contributions from over [100 developers](https://github.com/h5bp/Front-end-Developer-Interview-Questions/graphs/contributors).
