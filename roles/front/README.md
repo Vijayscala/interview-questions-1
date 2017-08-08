@@ -16,12 +16,6 @@ This file contains a number of front-end interview questions that can be used wh
   1. [Coding Questions](#coding-questions)
   1. [Fun Questions](#fun-questions)
 
-## Getting Involved
-
-  1. [Contributors](#contributors)
-  1. [How to Contribute](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/CONTRIBUTING.md)
-  1. [License](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/LICENSE.md)
-
 #### General Questions:
 
 * What excites or interests you about coding?
