@@ -81,6 +81,20 @@ These are a collection of specific and general interview questions focusing on F
 * What is HTTP Strict Transport Security (HSTS)? (Prevents Man in the Middle attacks)
 * Browser-server communication methods: WebSocket, EventSource, Comet(Polling, Long-Polling, Streaming)
 * What is *character encoding*?
+
+A byte can only have 256 distinct values, being 8 bits, since there are character sets with more than 256 cahracters, you can not simply say that each character is a byte. To remedy this there is character mapping that describe how to turn each character in a character set into a sequence of bytes. Some characters might be mapped to a single byte but others will have to be mapped to multiple bytes.
+
+* What is ASCII?
+
+American Standard Code for Information Interchange is a character encoding standard for electronic communication, 
+
+
+* What is Unitcode?
+
+[Unicode](https://en.wikipedia.org/wiki/Unicode) also is a unification of character sets not neccessarily just an encoding, it uses the same characters like ASCII standard, but it extends the list with additional characters which gives each character a code point in format `u+xxxx`.
+UTF-8, the most widely used by websites, uses one byte for the first 128 code points, and up to 4 bytes for other characters. The first 128 Unicode code points are the ASCII characters; so an ASCII text is a UTF-8 text.
+UTF-8, UTF-16 and UTF-32 are encodings that apply the Unicode character table.
+
 * What is *role-based access control* and *access control list*?
 * What is session and persistent cookies, sessionStorage and localStorage?
 * How to implement *remember-me*? (http://jaspan.com/improved_persistent_login_cookie_best_practice)
