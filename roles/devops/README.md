@@ -139,7 +139,31 @@ Make a PR, and contribute back if you enjoyed this list
 ### Security Questions
 
 * Difference between authorization and authentication?
+
+Authentication is the mechanism whereby systems may securely identify their users. Authentication systems seek to provide answers to the questions:
+
+Who is the user?
+Is the user really who he/she represents himself to be?
+Authorization, by contrast, is the mechanism by which a system determines what level of access a particular (authenticated) user should have to resources controlled by the system. For an example that may or may not be related to a web-based scenario, a database management system might be designed so as to provide certain specified individuals with the ability to retrieve information from a database but not the ability to change data stored in the database, while giving other individuals the ability to change data. Authorization systems provide answers to the questions:
+
+Is user X authorized to access resource R?
+Is user X authorized to perform operation P?
+Is user X authorized to perform operation P on resource R?
+
 * Describe two-factor authentication
+
+Two factor authentication is using two factors to authenticate a person (or sometimes a process).
+
+This might be a PIN number (something you know) and a debit card (something you have).
+
+There are many authentication factors that might be used:
+
+Authentication factors apply for a special procedure of authenticating a person as an individual with definitively granted access rights. There are different factor types for authentication:
+
+Human factors are inherently bound to the individual, for example biometrics ("Something you are").
+Personal factors are otherwise mentally or physically allocated to the individual as for example learned code numbers. ("Something you know")
+Technical factors are bound to physical means as for example a pass, an ID card or a token. ("Something you have")
+
 * Describe how would you secure a web application
   * HTTP vs HTTPS
 * Talk about PKI/your experience with SSL/Certificates
