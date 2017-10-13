@@ -16,12 +16,6 @@ This file contains a number of front-end interview questions that can be used wh
   1. [Coding Questions](#coding-questions)
   1. [Fun Questions](#fun-questions)
 
-## Getting Involved
-
-  1. [Contributors](#contributors)
-  1. [How to Contribute](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/CONTRIBUTING.md)
-  1. [License](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/LICENSE.md)
-
 #### General Questions:
 
 * What excites or interests you about coding?
@@ -42,10 +36,26 @@ This file contains a number of front-end interview questions that can be used wh
 #### HTML Questions:
 
 * What does a `doctype` do?
+
+A `DOCTYPE` is a required preamble.
+`DOCTYPE`s are required for legacy reasons. When omitted, browsers tend to use a different rendering mode that is incompatible with some specifications. Including the `DOCTYPE` in a document ensures that the browser makes a best-effort attempt at following the relevant specifications.
 * What's the difference between full standards mode, almost standards mode and quirks mode?
+
+There are now three modes used by the layout engines in web browsers: quirks mode, almost standards mode, and full standards mode. 
+In `quirks mode`, layout emulates nonstandard behavior in Navigator 4 and Internet Explorer 5. This is essential in order to support websites that were built before the widespread adoption of web standards. 
+In `full standards mode`, the behavior is (hopefully) the behavior described by the HTML and CSS specifications. 
+In `almost standards mode`, there are only a very small number of quirks implemented.
 * What's the difference between HTML and XHTML?
+
+If you serve your page as XHTML using the `application/xhtml+xml MIME type` in the `Content-Type` HTTP header, you do not need a `DOCTYPE` to enable standards mode, as such documents always use full standards mode. 
 * Are there any problems with serving pages as `application/xhtml+xml`?
+
+Serving your pages as application/xhtml+xml will cause Internet Explorer 8 to show a download dialog box for an unknown format instead of displaying your page, as the first version of Internet Explorer with support for XHTML is Internet Explorer 9. If you serve XHTML-like content using the text/html MIME type, browsers will read it as HTML, and you will need the DOCTYPE to use standards mode.
 * How do you serve a page with content in multiple languages?
+
+Use a language attribute on the html tag to declare the default language of the text in the page. When the page contains content in another language, add a language attribute to an element surrounding that content.
+Use the lang attribute for pages served as HTML, and the xml:lang attribute for pages served as XML. For XHTML 1.x and HTML5 polyglot documents, use both together.
+
 * What kind of things must you be wary of when design or developing for multilingual sites?
 * What are `data-` attributes good for?
 * Consider HTML5 as an open web platform. What are the building blocks of HTML5?

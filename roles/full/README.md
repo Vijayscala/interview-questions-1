@@ -125,8 +125,63 @@ UTF-8, UTF-16 and UTF-32 are encodings that apply the Unicode character table.
 
 #### [[⬆]](#table-of-contents) Transactions: 
 * What ACID?
+
+ACID is a set of properties that you would like to apply when modifying a database.
+Atomicity
+Consistency
+Isolation
+Durability
+A transaction is a set of related changes which is used to achieve some of the ACID properties. Transactions are tools to achieve the ACID properties.
+
+Atomicity means that you can guarantee that all of a transaction happens, or none of it does; you can do complex operations as one single unit, all or nothing, and a crash, power failure, error, or anything else won't allow you to be in a state in which only some of the related changes have happened.
+
+Consistency means that you guarantee that your data will be consistent; none of the constraints you have on related data will ever be violated.
+
+Isolation means that one transaction cannot read data from another transaction that is not yet completed. If two transactions are executing concurrently, each one will see the world as if they were executing sequentially, and if one needs to read data that is written by another, it will have to wait until the other is finished.
+
+Durability means that once a transaction is complete, it is guaranteed that all of the changes have been recorded to a durable medium (such as a hard disk), and the fact that the transaction has been completed is likewise recorded.
 * What is 2-phase, 3-phase commit?
+one-phase commit is usually used within one system or database while two-phase commit is used for distributed transactions which span multiple DBs or systems. Let me show you simple example for each
+
+One-phase commit
+```
+BEGIN
+   INSERT INTO CUSTOMERS (ID,NAME,AGE,ADDRESS,SALARY)
+      VALUES (1, 'Ramesh', 32, 'Ahmedabad', 2000.00 );
+   INSERT INTO CUSTOMERS (ID,NAME,AGE,ADDRESS,SALARY)
+      VALUES (2, 'Khilan', 25, 'Delhi', 1500.00 );
+COMMIT;
+```
+This is classic atomic transaction written in PL/SQL (for Java EE world, imagine EJB method which can be transactional too), there is just one phase where all actions are performed and either the commit or rollback is made.
+
+Two-phase commit
+```
+//pseodocode
+BEGIN
+    UPDATE db1; //updates DB on another machine
+    UPDATE someCloudStorage; //update something on the cloud
+    INSERT INTO SomeTable VALUES(...);
+COMMIT;
+```
+Three-phase commit
+![https://i.stack.imgur.com/7T9Ca.png](https://i.stack.imgur.com/7T9Ca.png)
+
+3PC can further guarantee atomicity by having an exchange of information with other parties to wait for 3 exchanges, 
+`canCommit`, `preCommit`, `doCommit`
+
+
 * What is pessimistic/optimistic locking?
+
+[Optimistic Locking](https://en.wikipedia.org/wiki/Optimistic_concurrency_control) is a strategy where you read a record, take note of a version number (other methods to do this involve dates, timestamps or checksums/hashes) and check that the version hasn't changed before you write the record back. When you write the record back you filter the update on the version to make sure it's atomic. (i.e. hasn't been updated between when you check the version and write the record to the disk) and update the version in one hit.
+
+If the record is dirty (i.e. different version to yours) you abort the transaction and the user can re-start it.
+
+This strategy is most applicable to high-volume systems and three-tier architectures where you do not necessarily maintain a connection to the database for your session. In this situation the client cannot actually maintain database locks as the connections are taken from a pool and you may not be using the same connection from one access to the next.
+
+[Pessimistic Locking](https://en.wikipedia.org/wiki/Record_locking) is when you lock the record for your exclusive use until you have finished with it. It has much better integrity than optimistic locking but requires you to be careful with your application design to avoid Deadlocks. To use pessimistic locking you need either a direct connection to the database (as would typically be the case in a two tier client server application) or an externally available transaction ID that can be used independently of the connection.
+
+In the latter case you open the transaction with the TxID and then reconnect using that ID. The DBMS maintains the locks and allows you to pick the session back up through the TxID. This is how distributed transactions using two-phase commit protocols (such as XA or COM+ Transactions) work.
+
 
 #### [[⬆]](#table-of-contents) Scalability: 
 * Horizontal and vertical scaling.
